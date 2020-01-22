@@ -1,2 +1,2 @@
-# djavaa.github.io
-My personal website built with the tutorial from: http://jmcglone.com/guides/github-pages/
+# Djavaa Whitter: Renaissance 
+My about me website built with help from the tutorial at: http://jmcglone.com/guides/github-pages/
