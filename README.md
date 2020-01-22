@@ -1,2 +1,2 @@
 # Djavaa Whitter: Renaissance Woman
-My about me website built with help from the tutorial at: http://jmcglone.com/guides/github-pages/
+An about me website and what I'm up to
