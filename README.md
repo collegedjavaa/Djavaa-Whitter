@@ -1,2 +1,2 @@
 # Djavaa Whitter: Renaissance Woman
-An about me website and what I'm up to
+My "About Me" website and the things I've done in InfoSys.
