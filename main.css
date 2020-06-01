@@ -1,43 +1,90 @@
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: Tahoma, Geneva, sans-serif;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+.side-menu {
+    height: 100%;
+    width: 200px;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lavender;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    overflow: auto;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.side-menu a {
+    background-color: lavender;
+    color: black;
+    display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline overline;
+    font-size: 19px;
 }
+.side-menu a:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+.side-menu a.active {
+    background-color: rebeccapurple;
+    color: white;
+}
+.selfie {
+    position: sticky;
+    padding: 30px;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the side-menu */
+    padding: 1px 16px;
+    height: 1000px;
 a {
     text-decoration: none;
     color: #999;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline, overline;
+}
+
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: Tahoma, Geneva, sans-serif;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .side-menu a {
+        float: left;
+        text-align: center;
+    }
+    div.main {
+        margin-left: 0;
+    }
+    .selfie {
+        display: none;
+    }
+    .side-menu p {
+        display: none;     
+    }
 }
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .side-menu a {
+      text-align: center;
+      float: none;
+  }
 }
