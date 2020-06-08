@@ -52,11 +52,14 @@ a:hover {
 
 }
 h1 {
-    font-size: 3em;
+    font-size: 30px;
     font-family: Tahoma, Geneva, sans-serif;
 }
+h2{
+    font-size: 25px;
+}
 p {
-    font-size: 1.5em;
+    font-size: 20px;
     line-height: 1.4em;
     color: #333;
 }
